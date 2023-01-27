@@ -1,3 +1,5 @@
-p {
-    color: red;
+.slideshow {
+   max-width: 1000px; 
+   position: relative;
+   margin:auto;
 }
