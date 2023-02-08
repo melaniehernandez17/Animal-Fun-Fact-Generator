@@ -1,10 +1,20 @@
 body {
    background-color: rgb(203, 203, 250);
    font-family:'Courier New', Courier, monospace;
+   margin-left: 10%;
+   margin-right: 10%;
 }
 
 .slideshow {
    max-width: 1000px; 
    position: relative;
    margin:auto;
+}
+
+button {
+   padding: 10px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 15px;
+   border-radius: 10px;
+   background-color: rgb(225, 255, 255);
 }
