@@ -1,6 +1,10 @@
-fact = ["Hello World!"]
+facts = [
+    "Dolphins sleep with half of their brain at a time and they always keep one eye open. This way they are able to look for predators and surface to breath.", 
+    "A lions roar can be heard up to 5 miles away.", 
+    "Pandas can eat between 26 to 84 pounds of bamboo a day."];
 function generateFact() {
-    document.getElementById("randomFact").innerHTML = fact;
+    let myFact = facts[Math.floor(Math.random()*facts.length)];
+    document.getElementById("randomFact").innerHTML = myFact;
 }
 
 function hideShowFact() {
