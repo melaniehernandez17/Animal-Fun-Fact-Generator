@@ -9,9 +9,18 @@ function generateFact() {
 
 function hideShowFact() {
     var x = document.getElementById("randomFact");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+function changeBackground() {
+    var body = document.body;
+    if (body.style.background === "rgb(179, 218, 255)") {
+        body.style.background = "rgb(203, 203, 250)";
+    } else {
+        body.style.background = "rgb(179, 218, 255)";
     }
 }
