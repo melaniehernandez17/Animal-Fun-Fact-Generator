@@ -5,16 +5,15 @@ body {
    margin-right: 10%;
 }
 
-.slideshow {
-   max-width: 1000px; 
-   position: relative;
-   margin:auto;
-}
-
 button {
-   padding: 10px;
+   padding: 12px 24px;
    font-family: 'Courier New', Courier, monospace;
    font-size: 15px;
    border-radius: 10px;
+   border-color:rgb(78, 1, 151);
    background-color: rgb(225, 255, 255);
+}
+
+button:hover {
+   box-shadow: 0 5px 5px 0 rgba(0,0,0, 0.3);
 }

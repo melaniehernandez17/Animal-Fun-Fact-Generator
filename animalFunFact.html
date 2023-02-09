@@ -11,36 +11,23 @@
     </head>
     <body id="body">
         <h1 style="text-align: center;">Animal Fun Facts!</h1>
-
+        
         <p>Welcome! On this page you will be able to view a slidehow with multiple pictures of different animal species. You will also be able to generate random fun facts.</p>
 
-       <!-- <div class="slideshow">
-            <div class="slide">
-                <div class="imageNumber">1/3</div>
-                <img src="threeDolhpins.jpeg">
-                <div class="caption">Caption</div>
-            </div>
-            <div class="slide">
-                <div class="imageNumber">2/3</div>
-                <img src="elephants.jpeg">
-                <div class="caption">Caption</div>
-            </div>
-            <div class="slide">
-                <div class="imageNumber">3/3</div>
-                <img src="panda.jpeg">
-                <div class="caption">Caption</div>
-            </div>
-        </div>
-    -->
-
+        <!--Button that generates a fun fact-->
+        <section>
         <div id="randomFact">
             <!--Fact Displays here-->
         </div>
-        <button onclick="generateFact(); hideShowFact()">Generate random fact</button>
+        <button onclick="generateFact(); hideShowFact()">Generate Random Fact</button>
+        </section>
         <br>
-        <br>
+
+        <!--Change the background color -->
+        <section id="changeStyling">
         <h2>Just for fun!</h2>
         <p>Click the button below to change the background color of the page.</p>
         <button onclick="changeBackground()">Change Background Color</button>
+        </section>
     </body>
 </html>
