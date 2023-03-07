@@ -1,8 +1,10 @@
 body {
    background-color: rgb(203, 203, 250);
    font-family:'Courier New', Courier, monospace;
-   margin-left: 10%;
+   margin-top: 5%;
+   margin-bottom: 5%;
    margin-right: 10%;
+   margin-left: 10%;
 }
 
 button {
@@ -16,4 +18,86 @@ button {
 
 button:hover {
    box-shadow: 0 5px 5px 0 rgba(0,0,0, 0.3);
+}
+
+/* Slideshow */
+
+* {box-sizing: border-box;}
+
+.slideshow {
+   max-width: 900px;
+   position: relative;
+   margin: auto;
+}
+
+.slides {
+   display: none;
+}
+
+.prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+}
+
+.next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+   background-color: rgba(0,0,0, 0.8);
+}
+
+.caption {
+   color: #f2f2f2;
+   background-color:rgb(0,0,0, 0.5);
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+}
+
+.number{
+   color:#f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+}
+
+.dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6 ease;
+}
+
+.active, .dot:hover {
+   background-color: #717171;
+}
+
+.fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+}
+
+@keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
 }

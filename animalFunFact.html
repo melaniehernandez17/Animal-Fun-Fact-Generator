@@ -6,28 +6,71 @@
         <style>
             #randomFact {
                 background-color:rgb(225, 255, 255);
+                display: none;
             }
         </style>
     </head>
     <body id="body">
         <h1 style="text-align: center;">Animal Fun Facts!</h1>
         
-        <p>Welcome! On this page you will be able to view a slidehow with multiple pictures of different animal species. You will also be able to generate random fun facts.</p>
+        <p>Welcome! On this page you will be able to view a slideshow with multiple pictures of different animal species. You will also be able to generate random fun facts.</p>
 
         <!--Button that generates a fun fact-->
         <section>
-        <div id="randomFact">
-            <!--Fact Displays here-->
-        </div>
-        <button onclick="generateFact(); hideShowFact()">Generate Random Fact</button>
+            <div id="randomFact">
+                <!--Fact Displays here-->
+            </div>
+            <button onclick="generateFact(); hideShowFact()">Generate Random Fact</button>
         </section>
         <br>
 
+        <!--Slideshow-->
+        <div class="slideshow">
+            <div class="slides fade">
+                <div class="number">1 / 4</div>
+                <img src="threeDolphins.jpeg" alt="three dolphins" style="width:100%">
+                <div class="caption"> Each dolphins dorsal fin is unique. </div>
+            </div>
+            <div class="slides fade">
+                <div class="number">2 / 4</div>
+                <img src="panda.jpeg" alt="panda" style="width:100%">
+                <div class="caption">Pandas can climb as high as 13,000 feet.</div>
+            </div>
+            <div class="slides fade">
+                <div class="number">3 / 4</div>
+                <img src="elephants.jpeg" alt="elephants" style="width:100%">
+                <div class="caption">Elephants communicate through vibrations.</div>
+            </div>
+            <div class="slides fade">
+                <div class="number">4 / 4</div>
+                <img src="lion.jpeg" alt="lion" style="width:100%">
+                <div class="caption">Lions are the only cats that live in groups.</div>
+            </div>
+
+        <!--Arrows-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!--Circles-->
+        <div style="text-align:center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <script>
+            let SlideIndex = 1;
+            showSlides(slideIndex);
+        </script>
+
         <!--Change the background color -->
         <section id="changeStyling">
-        <h2>Just for fun!</h2>
-        <p>Click the button below to change the background color of the page.</p>
-        <button onclick="changeBackground()">Change Background Color</button>
+            <h2>Just for fun!</h2>
+            <p>Click the button below to change the background color of the page.</p>
+            <button onclick="changeBackground()">Change Background Color</button>
         </section>
     </body>
 </html>
